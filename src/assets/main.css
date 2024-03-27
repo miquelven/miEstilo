@@ -12,4 +12,9 @@
 
 body {
   font-family: "Poppins", arial;
+  overflow: hidden;
+}
+
+section {
+  width: 100vw;
 }

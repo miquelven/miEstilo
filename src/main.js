@@ -9,11 +9,30 @@ import {
   RiInstagramLine,
   IoMenuSharp,
   IoCloseSharp,
+  BiWhatsapp,
 } from "oh-vue-icons/icons";
 
-addIcons(RiFacebookBoxLine, RiInstagramLine, IoMenuSharp, IoCloseSharp);
+// Vuetify
+import "vuetify/styles";
+import { createVuetify } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
+
+const vuetify = createVuetify({
+  components,
+  directives,
+});
+
+addIcons(
+  RiFacebookBoxLine,
+  RiInstagramLine,
+  IoMenuSharp,
+  IoCloseSharp,
+  BiWhatsapp
+);
 
 const app = createApp(App);
 
 app.component("v-icon", OhVueIcon);
+app.use(vuetify);
 app.mount("#app");
