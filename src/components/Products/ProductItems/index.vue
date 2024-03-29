@@ -77,6 +77,13 @@ import { defineComponent } from "vue";
 import { Carousel, Navigation, Slide, Pagination } from "vue3-carousel";
 import Container from "../../Container/index.vue";
 
+import camisa from "../../../../public/images/products/camisa.webp";
+import calçaPreta from "../../../../public/images/products/calça-preta.webp";
+import moletomPreto from "../../../../public/images/products/moletom-preto.webp";
+import calçaCamuflada from "../../../../public/images/products/calça-camuflada.webp";
+import tenis from "../../../../public/images/products/short.webp";
+import moletom from "../../../../public/images/products/moletom.webp";
+
 import "vue3-carousel/dist/carousel.css";
 
 export default defineComponent({
@@ -109,42 +116,42 @@ export default defineComponent({
     data: {
       products: [
         {
-          img: "../../../../public/images/products/camisa.png",
+          img: camisa,
           name: "Camisa Branca",
           totalPrice: 80,
           price: 40,
           discount: 50,
         },
         {
-          img: "../../../../public/images/products/calça-preta.jpg",
+          img: calçaPreta,
           name: "Calça Esportiva",
           totalPrice: 50,
           price: 50,
           discount: 0,
         },
         {
-          img: "../../../../public/images/products/moletom-preto.png",
+          img: moletomPreto,
           name: "Moletom ",
           totalPrice: 140,
           price: 100,
           discount: 30,
         },
         {
-          img: "../../../../public/images/products/calça-camuflada.png",
+          img: calçaCamuflada,
           name: "Calça Camuflada",
           totalPrice: 120,
           price: 120,
           discount: 0,
         },
         {
-          img: "../../../../public/images/products/short.png",
+          img: tenis,
           name: "Short",
           totalPrice: 30,
           price: 20,
           discount: 35,
         },
         {
-          img: "../../../../public/images/products/moletom.png",
+          img: moletom,
           name: "Moletom",
           totalPrice: 100,
           price: 80,

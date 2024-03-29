@@ -1,9 +1,11 @@
 <script setup>
 import Container from "../Container/index.vue";
+import milimalistCollection from "../../../public/images/collections/minimalistCollection.webp";
+import fashionCollection from "../../../public/images/collections/fashionCollection.webp";
 
 const data = [
   {
-    img: "../../../public/images/collections/minimalistCollection.png",
+    img: milimalistCollection,
     alt: "Imagem da coleção minimalista",
     title: "Coleção Minimalista",
     list: [
@@ -14,7 +16,7 @@ const data = [
     discount: 70,
   },
   {
-    img: "../../../public/images/collections/fashionCollection.jpg",
+    img: fashionCollection,
     alt: "Imagem da coleção fashion",
     title: "Coleção Fashion",
     list: [

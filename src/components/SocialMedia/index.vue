@@ -1,34 +1,40 @@
 <script setup>
 import Container from "../Container/index.vue";
+import camisa from "../../../public/images/socialMedia/camisa.webp";
+import calçaCinza from "../../../public/images/socialMedia/calçaCinza.webp";
+import tenisVerde from "../../../public/images/socialMedia/tenisVerde.webp";
+import regataBranca from "../../../public/images/socialMedia/regataBranca.webp";
+import moletomVermelho from "../../../public/images/socialMedia/moletomVermelho.webp";
+import bermuda from "../../../public/images/socialMedia/bermuda.webp";
 
 const data = [
   {
-    img: "../../../public/images/socialMedia/camisa.png",
+    img: camisa,
     color: "#D9D9D9",
     alt: "Imagem de uma camisa",
   },
   {
-    img: "../../../public/images/socialMedia/calçaCinza.png",
+    img: calçaCinza,
     color: "#DFD2AF",
     alt: "Imagem de uma calça",
   },
   {
-    img: "../../../public/images/socialMedia/tenisVerde.png",
+    img: tenisVerde,
     color: "#B9DFAF",
     alt: "Imagem de uma tenis",
   },
   {
-    img: "../../../public/images/socialMedia/regataBranca.png",
+    img: regataBranca,
     color: "#AFDADF",
     alt: "Imagem de uma regata",
   },
   {
-    img: "../../../public/images/socialMedia/moletomVermelho.png",
+    img: moletomVermelho,
     color: "#B0AFDF",
     alt: "Imagem de uma moletom",
   },
   {
-    img: "../../../public/images/socialMedia/bermuda.png",
+    img: bermuda,
     color: "#DFAFAF",
     alt: "Imagem de uma bermuda",
   },

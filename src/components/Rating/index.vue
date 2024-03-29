@@ -1,21 +1,23 @@
 <script setup>
 import { Carousel, Navigation, Slide } from "vue3-carousel";
+import backgroundRating from "../../../public/images/ratingImg.webp";
+import avatarImg from "../../../public/images/ratingAvatarImg.webp";
 
 const data = [
   {
-    img: "../../../public/images/ratingAvatarImg.png",
+    img: avatarImg,
     alt: "Imagem do avaliador",
     name: "Amanda Silva",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ex sit amet justo facilisis vestibulum. Fusce metus turpis, fringilla in faucibus et, ultricies ut justo.",
   },
   {
-    img: "../../../public/images/ratingAvatarImg.png",
+    img: avatarImg,
     alt: "Imagem do avaliador",
     name: "Amanda Silva",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ex sit amet justo facilisis vestibulum. Fusce metus turpis, fringilla in faucibus et, ultricies ut justo.",
   },
   {
-    img: "../../../public/images/ratingAvatarImg.png",
+    img: avatarImg,
     alt: "Imagem do avaliador",
     name: "Amanda Silva",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ex sit amet justo facilisis vestibulum. Fusce metus turpis, fringilla in faucibus et, ultricies ut justo.",
@@ -25,7 +27,7 @@ const data = [
 
 <template>
   <section class="py-40" id="rating">
-    <v-parallax class="h-[400px]" src="../../../public/images/ratingImg.jpg">
+    <v-parallax class="h-[400px]" :src="backgroundRating">
       <div class="text-white max-w-screen-md mx-auto">
         <div class="flex justify-center items-center h-[400px]">
           <Carousel
@@ -33,7 +35,7 @@ const data = [
             :wrapAround="true"
             :transition="1500"
             :itemsToShow="1"
-            autoplay="4000"
+            :autoplay="4000"
             :navigationEnabled="true"
             class="flex flex-col gap-5 w-full"
           >

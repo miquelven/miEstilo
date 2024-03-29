@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from "vue";
 
+import logo from "../../../public/images/logo.webp";
+
 import Container from "../Container/index.vue";
 
 const showMenu = ref(false);
@@ -14,7 +16,7 @@ const showMenu = ref(false);
     <Container>
       <div class="flex justify-between items-center relative">
         <img
-          src="/public/images/logo.png"
+          :src="logo"
           alt="Imagem da logo"
           class="w-16 max-sm:w-12 max-[420px]:w-10"
         />
