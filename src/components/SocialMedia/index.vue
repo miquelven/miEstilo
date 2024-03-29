@@ -36,7 +36,7 @@ const data = [
 </script>
 
 <template>
-  <section class="mt-20 mb-40">
+  <section class="mt-20 mb-40" id="contact">
     <Container>
       <div class="flex flex-col justify-center items-center">
         <div

@@ -12,7 +12,7 @@ import SocialMedia from "./components/SocialMedia/index.vue";
 
 <template>
   <Header />
-  <main>
+  <main class="snap-y">
     <Home />
     <Products />
     <ProductsIconsArea />

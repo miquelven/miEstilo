@@ -24,15 +24,10 @@ const data = [
 </script>
 
 <template>
-  <section class="my-40">
-    <v-parallax
-      class="h-[300px] max-sm:h-[400px]"
-      src="../../../public/images/ratingImg.jpg"
-    >
+  <section class="my-40" id="rating">
+    <v-parallax class="h-[400px]" src="../../../public/images/ratingImg.jpg">
       <div class="text-white max-w-screen-md mx-auto">
-        <div
-          class="flex justify-center items-center h-[300px] max-sm:h-[400px]"
-        >
+        <div class="flex justify-center items-center h-[400px]">
           <Carousel
             max-width="500px"
             :wrapAround="true"

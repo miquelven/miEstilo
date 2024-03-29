@@ -3,7 +3,7 @@ import Container from "../Container/index.vue";
 </script>
 
 <template>
-  <section class="my-40">
+  <section class="my-40" id="about">
     <Container>
       <h3 class="text-4xl font-bold mb-14 max-lg:text-3xl max-sm:text-2xl">
         Sobre Nós

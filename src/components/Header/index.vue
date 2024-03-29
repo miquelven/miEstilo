@@ -38,8 +38,7 @@ const showMenu = ref(false);
             <li
               class="transition-all duration-300 hover:text-[#495057] cursor-pointer hover:scale-95"
             >
-              <a href="#rating"></a>
-              Avaliações
+              <a href="#rating"> Avaliações </a>
             </li>
             <li
               class="transition-all duration-300 hover:text-[#495057] cursor-pointer hover:scale-95"
@@ -71,11 +70,11 @@ const showMenu = ref(false);
         <div class="flex gap-4 max-md:hidden">
           <v-icon
             name="ri-facebook-box-line"
-            class="transition-all duration-300 w-8 h-8 text-[#495057] hover:text-black cursor-pointer"
+            class="transition-all duration-300 w-7 h-7 text-[#495057] hover:text-black cursor-pointer"
           />
           <v-icon
             name="ri-instagram-line"
-            class="transition-all duration-300 w-8 h-8 text-[#495057] hover:text-black cursor-pointer"
+            class="transition-all duration-300 w-7 h-7 text-[#495057] hover:text-black cursor-pointer"
           />
         </div>
       </div>
