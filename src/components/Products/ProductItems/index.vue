@@ -1,78 +1,76 @@
 <template>
-  <Container>
-    <Carousel
-      v-bind="settings"
-      :breakpoints="breakpoints"
-      :wrapAround="true"
-      :transition="500"
-      :autoplay="4000"
-      class="flex flex-col gap-5 w-full"
-    >
-      <Slide v-for="(product, index) in data.products" :key="index">
-        <v-card
-          elevated="0"
-          class="relative pt-10 w-[320px] h-[384px] max-lg:w-[280px] max-lg:h-[344px] max-md:w-[220px] max-md:h-[284px]"
+  <Carousel
+    v-bind="settings"
+    :breakpoints="breakpoints"
+    :wrapAround="true"
+    :transition="500"
+    :autoplay="4000"
+    class="flex flex-col gap-5 w-full"
+  >
+    <Slide v-for="(product, index) in data.products" :key="index">
+      <v-card
+        elevated="0"
+        class="relative pt-10 w-[320px] h-[384px] max-lg:w-[280px] max-lg:h-[344px] max-md:w-[220px] max-md:h-[284px]"
+      >
+        <!-- whatsapp button -->
+        <v-btn
+          variant="outlined"
+          color="#50af29"
+          style="position: absolute; top: 0; left: 0"
+          class="max-md:scale-90"
         >
-          <!-- whatsapp button -->
-          <v-btn
-            variant="outlined"
-            color="#50af29"
-            style="position: absolute; top: 0; left: 0"
-            class="max-md:scale-90"
+          <v-icon
+            name="bi-whatsapp"
+            class="h-6 w-6 text-[#50af29] max-md:h-5 max-md:w-5"
+          ></v-icon>
+        </v-btn>
+
+        <!-- discount button -->
+
+        <v-card
+          v-if="product.discount"
+          color="#D77A61"
+          class="w-14 h-7 text-white flex justify-center items-center max-md:w-11 max-md:h-7"
+          style="position: absolute; top: 0; right: 0"
+        >
+          <span
+            class="text-center w-full h-full inline-block font-semibold max-md:text-xs"
+            >{{ product.discount }}%</span
           >
-            <v-icon
-              name="bi-whatsapp"
-              class="h-6 w-6 text-[#50af29] max-md:h-5 max-md:w-5"
-            ></v-icon>
-          </v-btn>
-
-          <!-- discount button -->
-
-          <v-card
-            v-if="product.discount"
-            color="#D77A61"
-            class="w-14 h-7 text-white flex justify-center items-center max-md:w-11 max-md:h-7"
-            style="position: absolute; top: 0; right: 0"
-          >
-            <span
-              class="text-center w-full h-full inline-block font-semibold max-md:text-xs"
-              >{{ product.discount }}%</span
-            >
-          </v-card>
-
-          <img
-            :src="product.img"
-            alt="imagem do produto"
-            class="h-[242px] flex-1 object-cover object-center mx-auto max-lg:h-[200px] max-md:h-[150px] max-sm:h-[120px] max-sm:mt-5"
-          />
-          <div class="flex flex-col gap-2 absolute bottom-4 left-0 w-full">
-            <h4
-              class="text-center text-xl font-semibold max-lg:text-lg max-md:text-base"
-            >
-              {{ product.name }}
-            </h4>
-            <div
-              class="flex gap-3 justify-center items-center font-medium max-lg:text-sm max-md:text-xs"
-            >
-              <span> R${{ product.price }},00 </span>
-
-              <span
-                v-if="product.price !== product.totalPrice"
-                class="text-[#aaa]"
-              >
-                R${{ product.totalPrice }},00
-              </span>
-            </div>
-          </div>
         </v-card>
-      </Slide>
 
-      <template #addons>
-        <Navigation />
-        <Pagination />
-      </template>
-    </Carousel>
-  </Container>
+        <img
+          :src="product.img"
+          alt="imagem do produto"
+          class="h-[242px] flex-1 object-cover object-center mx-auto max-lg:h-[200px] max-md:h-[150px] max-sm:h-[120px] max-sm:mt-5"
+        />
+        <div class="flex flex-col gap-2 absolute bottom-4 left-0 w-full">
+          <h4
+            class="text-center text-xl font-semibold max-lg:text-lg max-md:text-base"
+          >
+            {{ product.name }}
+          </h4>
+          <div
+            class="flex gap-3 justify-center items-center font-medium max-lg:text-sm max-md:text-xs"
+          >
+            <span> R${{ product.price }},00 </span>
+
+            <span
+              v-if="product.price !== product.totalPrice"
+              class="text-[#aaa]"
+            >
+              R${{ product.totalPrice }},00
+            </span>
+          </div>
+        </div>
+      </v-card>
+    </Slide>
+
+    <template #addons>
+      <Navigation />
+      <Pagination />
+    </template>
+  </Carousel>
 </template>
 
 <script>
