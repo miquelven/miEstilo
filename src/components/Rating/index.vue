@@ -43,7 +43,7 @@ const data = [
           >
             <Slide v-for="(infos, index) in data" :key="index">
               <div
-                class="flex gap-10 items-center max-md:flex-col max-md:items-start max-md:gap-1 max-sm:items-center max-sm:px-4"
+                class="flex gap-10 items-center max-md:flex-col max-md:items-start max-md:gap-1 max-sm:items-center max-sm:px-6"
               >
                 <div
                   class="bg-[#B9B9B9] brightness-110 h-32 w-32 flex flex-col justify-end items-center max-md:h-24 max-md:w-24 max-sm:mb-20"

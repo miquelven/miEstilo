@@ -15,7 +15,7 @@ import ProductItems from "./ProductItems/index.vue";
         >
 
         <!-- line -->
-        <div class="absolute -bottom-1 left-0 w-full h-0.5 bg-[#eee]"></div>
+        <div class="absolute -bottom-1 left-0 w-full h-0.5 bg-[#ddd]"></div>
       </div>
 
       <ProductItems />

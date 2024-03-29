@@ -5,6 +5,7 @@ import Products from "./components/Products/index.vue";
 import ProductsIconsArea from "./components/ProductsIconsArea/index.vue";
 import Collections from "./components/Collections/index.vue";
 import Rating from "./components/Rating/index.vue";
+import About from "./components/About/index.vue";
 </script>
 
 <template>
@@ -15,5 +16,6 @@ import Rating from "./components/Rating/index.vue";
     <ProductsIconsArea />
     <Collections />
     <Rating />
+    <About />
   </main>
 </template>
