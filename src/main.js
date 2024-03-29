@@ -10,6 +10,15 @@ import {
   IoMenuSharp,
   IoCloseSharp,
   BiWhatsapp,
+  IoShirtOutline,
+  GiArmoredPants,
+  GiConverseShoe,
+  GiDress,
+  GiLargeDress,
+  GiLabCoat,
+  GiBilledCap,
+  GiSkirt,
+  IoShirt,
 } from "oh-vue-icons/icons";
 
 // Vuetify
@@ -43,7 +52,16 @@ addIcons(
   RiInstagramLine,
   IoMenuSharp,
   IoCloseSharp,
-  BiWhatsapp
+  BiWhatsapp,
+  IoShirtOutline,
+  GiArmoredPants,
+  GiConverseShoe,
+  GiDress,
+  GiLargeDress,
+  GiLabCoat,
+  GiBilledCap,
+  GiSkirt,
+  IoShirt
 );
 
 const app = createApp(App);

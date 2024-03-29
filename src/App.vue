@@ -2,10 +2,14 @@
 import Header from "./components/Header/index.vue";
 import Home from "./components/Home/index.vue";
 import Products from "./components/Products/index.vue";
+import ProductsIconsArea from "./components/ProductsIconsArea/index.vue";
 </script>
 
 <template>
   <Header />
-  <Home />
-  <Products />
+  <main>
+    <Home />
+    <Products />
+    <ProductsIconsArea />
+  </main>
 </template>
