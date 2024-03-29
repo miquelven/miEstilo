@@ -28,7 +28,7 @@ const data = [
 </script>
 
 <template>
-  <section class="mb-40">
+  <section class="my-60">
     <Container>
       <div class="flex gap-16 max-2xl:gap-8 max-lg:flex-col">
         <div

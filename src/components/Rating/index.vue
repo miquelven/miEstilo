@@ -24,7 +24,7 @@ const data = [
 </script>
 
 <template>
-  <section class="my-40" id="rating">
+  <section class="py-40" id="rating">
     <v-parallax class="h-[400px]" src="../../../public/images/ratingImg.jpg">
       <div class="text-white max-w-screen-md mx-auto">
         <div class="flex justify-center items-center h-[400px]">
@@ -33,6 +33,7 @@ const data = [
             :wrapAround="true"
             :transition="1500"
             :itemsToShow="1"
+            autoplay="4000"
             :navigationEnabled="true"
             class="flex flex-col gap-5 w-full"
           >

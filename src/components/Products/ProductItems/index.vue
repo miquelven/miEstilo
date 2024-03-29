@@ -97,12 +97,10 @@ export default defineComponent({
     // breakpoints are mobile first
     // any settings not specified will fallback to the carousel settings
     breakpoints: {
-      // 700px and up
-      500: {
+      550: {
         itemsToShow: 2,
         snapAlign: "center",
       },
-      // 1024 and up
       1024: {
         itemsToShow: 3,
         snapAlign: "center",

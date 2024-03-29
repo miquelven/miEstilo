@@ -3,7 +3,7 @@ import Container from "../Container/index.vue";
 import ProductItems from "./ProductItems/index.vue";
 </script>
 <template>
-  <section class="my-52" id="products">
+  <section class="my-52 scroll-mt-32" id="products">
     <Container>
       <h3 class="text-4xl font-bold mb-5 max-lg:text-3xl max-sm:text-2xl">
         Alguns Produtos
