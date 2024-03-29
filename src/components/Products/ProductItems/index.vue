@@ -9,7 +9,6 @@
   >
     <Slide v-for="(product, index) in data.products" :key="index">
       <v-card
-        elevated="0"
         class="relative pt-10 w-[320px] h-[384px] max-lg:w-[280px] max-lg:h-[344px] max-md:w-[220px] max-md:h-[284px]"
       >
         <!-- whatsapp button -->
