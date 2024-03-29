@@ -65,7 +65,7 @@ const data = [
           </div>
 
           <div
-            class="text-center w-[calc(33%-20px)] py-3 shadow-md shadow-gray-400 absolute bottom-0 left-0 translate-x-[108%] translate-y-[50%] bg-white flex flex-col gap-4 max-lg:w-full max-lg:translate-x-0 max-lg:translate-y-[100%]"
+            class="text-center w-[calc(33%-20px)] py-3 shadow-md shadow-gray-400 absolute bottom-0 left-0 translate-x-[108%] translate-y-[50%] bg-white flex flex-col gap-4 max-lg:w-full max-lg:translate-x-0 max-lg:translate-y-[100%] max-sm:border-b-2 max-sm:border-gray-200 max-sm:shadow-none"
           >
             <h6 class="text-xl font-semibold max-lg:text-lg max-sm:text-base">
               Nos siga no instagram

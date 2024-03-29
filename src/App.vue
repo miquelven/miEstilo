@@ -1,5 +1,6 @@
 <script setup>
 import Header from "./components/Header/index.vue";
+import Footer from "./components/Footer/index.vue";
 import Home from "./components/Home/index.vue";
 import Products from "./components/Products/index.vue";
 import ProductsIconsArea from "./components/ProductsIconsArea/index.vue";
@@ -20,4 +21,5 @@ import SocialMedia from "./components/SocialMedia/index.vue";
     <About />
     <SocialMedia />
   </main>
+  <Footer />
 </template>
