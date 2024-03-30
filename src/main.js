@@ -19,6 +19,7 @@ import {
   GiBilledCap,
   GiSkirt,
   IoShirt,
+  BiArrowUpSquareFill,
 } from "oh-vue-icons/icons";
 
 // Vuetify
@@ -61,7 +62,8 @@ addIcons(
   GiLabCoat,
   GiBilledCap,
   GiSkirt,
-  IoShirt
+  IoShirt,
+  BiArrowUpSquareFill
 );
 
 const app = createApp(App);
