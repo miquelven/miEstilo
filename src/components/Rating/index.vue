@@ -1,7 +1,7 @@
 <script setup>
 import { Carousel, Navigation, Slide } from "vue3-carousel";
-import backgroundRating from "../../../public/images/ratingImg.webp";
-import avatarImg from "../../../public/images/ratingAvatarImg.webp";
+import backgroundRating from "../../../public/images/rating/ratingImg.webp";
+import avatarImg from "../../../public/images/rating/ratingAvatarImg.webp";
 
 const data = [
   {

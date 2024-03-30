@@ -1,8 +1,8 @@
 <script setup>
 import Container from "../Container/index.vue";
-import womanHome from "../../../public/images/womanHome.webp";
-import shoeHome from "../../../public/images/shoeHome.webp";
-import manHome from "../../../public/images/manHome.webp";
+import womanHome from "../../../public/images/home/womanHome.webp";
+import shoeHome from "../../../public/images/home/shoeHome.webp";
+import manHome from "../../../public/images/home/manHome.webp";
 
 const data = [
   {
