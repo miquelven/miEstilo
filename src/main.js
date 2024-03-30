@@ -3,6 +3,7 @@ import "./assets/main.css";
 import { createApp } from "vue";
 import App from "./App.vue";
 
+// vue icons
 import { OhVueIcon, addIcons } from "oh-vue-icons";
 import {
   RiFacebookBoxLine,
@@ -28,14 +29,6 @@ import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 
-// PrimeVue
-import PrimeVue from "primevue/config";
-
-import "primevue/resources/themes/md-light-deeppurple/theme.css";
-
-import Button from "primevue/button";
-import Carousel from "primevue/carousel";
-
 const vuetify = createVuetify({
   components,
   directives,
@@ -48,6 +41,12 @@ const vuetify = createVuetify({
   },
 });
 
+// PrimeVue
+import PrimeVue from "primevue/config";
+import "primevue/resources/themes/md-light-deeppurple/theme.css";
+import Carousel from "primevue/carousel";
+
+// add icons vue icons
 addIcons(
   RiFacebookBoxLine,
   RiInstagramLine,
@@ -68,9 +67,11 @@ addIcons(
 
 const app = createApp(App);
 
+// vue icons
 app.component("v-icon", OhVueIcon);
-app.component("Button", Button);
+// primevue
 app.component("Carousel", Carousel);
+
 app.use(vuetify);
 app.use(PrimeVue, {
   unstyled: true,
