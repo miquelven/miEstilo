@@ -1,7 +1,7 @@
 <script setup>
 import Header from "./components/Header/index.vue";
 import Footer from "./components/Footer/index.vue";
-import Home from "./components/Home/index.vue";
+import Banner from "./components/Banner/index.vue";
 import Products from "./components/Products/index.vue";
 import ProductsIconsArea from "./components/ProductsIconsArea/index.vue";
 import Collections from "./components/Collections/index.vue";
@@ -35,7 +35,7 @@ const scrollTop = () => {
 <template>
   <Header />
   <main class="snap-y">
-    <Home />
+    <Banner />
     <Products />
     <ProductsIconsArea />
     <Collections />

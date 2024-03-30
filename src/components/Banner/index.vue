@@ -1,22 +1,22 @@
 <script setup>
 import Container from "../Container/index.vue";
-import womanHome from "../../../public/images/home/womanHome.webp";
-import shoeHome from "../../../public/images/home/shoeHome.webp";
-import manHome from "../../../public/images/home/manHome.webp";
+import womanBanner from "../../../public/images/banner/womanBanner.webp";
+import shoeBanner from "../../../public/images/banner/shoeBanner.webp";
+import manBanner from "../../../public/images/banner/manBanner.webp";
 
 const data = [
   {
-    img: womanHome,
+    img: womanBanner,
     title: "#ParaMulheres",
     subtitle: "Venda com 10% de desconto em quase tudo",
   },
   {
-    img: shoeHome,
+    img: shoeBanner,
     title: "#Acessórios",
     subtitle: "Venda com 40% de desconto em quase tudo",
   },
   {
-    img: manHome,
+    img: manBanner,
     title: "#ParaHomens",
     subtitle: "Venda com 10% de desconto em quase tudo",
   },
