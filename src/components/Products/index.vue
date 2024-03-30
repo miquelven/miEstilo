@@ -6,9 +6,7 @@ import Divider from "../Divider/index.vue";
 <template>
   <section class="my-52 scroll-mt-32" id="products">
     <Container>
-      <h3 class="text-4xl font-bold mb-5 max-lg:text-3xl max-sm:text-2xl">
-        Alguns Produtos
-      </h3>
+      <h3>Alguns Produtos</h3>
 
       <div class="flex justify-end items-center gap-4 relative mb-32 mt-10">
         <span class="uppercase max-lg:text-sm max-sm:text-xs"

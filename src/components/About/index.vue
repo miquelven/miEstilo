@@ -6,9 +6,7 @@ import Divider from "../Divider/index.vue";
 <template>
   <section class="my-40 scroll-mt-40" id="about">
     <Container>
-      <h3 class="text-4xl font-bold mb-14 max-lg:text-3xl max-sm:text-2xl">
-        Sobre Nós
-      </h3>
+      <h3>Sobre Nós</h3>
 
       <Divider />
 
