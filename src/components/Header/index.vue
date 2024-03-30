@@ -4,6 +4,8 @@ import { ref } from "vue";
 import logo from "../../../public/images/logo.webp";
 
 import Container from "../Container/index.vue";
+import Links from "./Links/index.vue";
+import Icons from "../Icons/index.vue";
 
 const showMenu = ref(false);
 </script>
@@ -32,26 +34,7 @@ const showMenu = ref(false);
           <ul
             class="transition-all duration-300 flex gap-8 font-medium max-md:py-3 max-md:gap-10 max-sm:text-xs max-[420px]:px-3 max-[420px]:text-[.625rem]"
           >
-            <li
-              class="transition-all duration-300 hover:text-[#495057] cursor-pointer hover:scale-95"
-            >
-              <a href="#products"> Produtos </a>
-            </li>
-            <li
-              class="transition-all duration-300 hover:text-[#495057] cursor-pointer hover:scale-95"
-            >
-              <a href="#rating"> Avaliações </a>
-            </li>
-            <li
-              class="transition-all duration-300 hover:text-[#495057] cursor-pointer hover:scale-95"
-            >
-              <a href="#about"> Sobre </a>
-            </li>
-            <li
-              class="transition-all duration-300 hover:text-[#495057] cursor-pointer hover:scale-95"
-            >
-              <a href="#contact"> Contato </a>
-            </li>
+            <Links />
           </ul>
         </nav>
 
@@ -70,14 +53,7 @@ const showMenu = ref(false);
         </button>
 
         <div class="flex gap-4 max-md:hidden">
-          <v-icon
-            name="ri-facebook-box-line"
-            class="transition-all duration-300 w-7 h-7 text-[#495057] hover:text-black cursor-pointer"
-          />
-          <v-icon
-            name="ri-instagram-line"
-            class="transition-all duration-300 w-7 h-7 text-[#495057] hover:text-black cursor-pointer"
-          />
+          <Icons />
         </div>
       </div>
     </Container>
