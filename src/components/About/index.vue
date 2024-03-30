@@ -1,5 +1,6 @@
 <script setup>
 import Container from "../Container/index.vue";
+import Divider from "../Divider/index.vue";
 </script>
 
 <template>
@@ -9,8 +10,7 @@ import Container from "../Container/index.vue";
         Sobre Nós
       </h3>
 
-      <!-- top line -->
-      <div class="left-0 w-full h-0.5 bg-[#ddd]"></div>
+      <Divider />
 
       <div class="my-28 flex flex-col gap-14 text-center max-sm:my-20">
         <h6 class="text-3xl font-medium max-lg:text-2xl max-sm:text-lg">
@@ -27,8 +27,7 @@ import Container from "../Container/index.vue";
         </p>
       </div>
 
-      <!-- bottom line -->
-      <div class="left-0 w-full h-0.5 bg-[#ddd]"></div>
+      <Divider />
     </Container>
   </section>
 </template>

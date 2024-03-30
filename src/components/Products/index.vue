@@ -1,6 +1,7 @@
 <script setup>
 import Container from "../Container/index.vue";
 import ProductItems from "./ProductItems/index.vue";
+import Divider from "../Divider/index.vue";
 </script>
 <template>
   <section class="my-52 scroll-mt-32" id="products">
@@ -14,8 +15,7 @@ import ProductItems from "./ProductItems/index.vue";
           >Mais produtos</span
         >
 
-        <!-- line -->
-        <div class="absolute -bottom-1 left-0 w-full h-0.5 bg-[#ddd]"></div>
+        <Divider :absolute="true" />
       </div>
 
       <ProductItems />
