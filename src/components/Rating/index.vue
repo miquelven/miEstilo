@@ -28,7 +28,18 @@ const data = [
 <template>
   <section class="py-40" id="rating">
     <v-parallax class="h-[400px]" :src="backgroundRating">
-      <div class="text-white max-w-screen-md mx-auto">
+      <div
+        v-motion
+        :initial="{ opacity: 0 }"
+        :visible-once="{
+          opacity: 1,
+          transition: {
+            delay: 600,
+            duration: 400,
+          },
+        }"
+        class="text-white max-w-screen-md mx-auto"
+      >
         <div class="flex justify-center items-center h-[400px]">
           <Carousel
             max-width="500px"

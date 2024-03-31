@@ -12,6 +12,14 @@ const showMenu = ref(false);
 
 <template>
   <header
+    v-motion
+    :initial="{ opacity: 0 }"
+    :enter="{
+      opacity: 1,
+      transition: {
+        duration: 600,
+      },
+    }"
     class="w-full py-3 bg-[#D9D9D9] relative"
     :class="[showMenu ? 'overflow-visible' : 'overflow-hidden']"
   >

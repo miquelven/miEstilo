@@ -1,5 +1,14 @@
 <template>
   <Carousel
+    v-motion
+    :initial="{ opacity: 0 }"
+    :visible-once="{
+      opacity: 1,
+      transition: {
+        duration: 500,
+        delay: 700,
+      },
+    }"
     v-bind="settings"
     :breakpoints="breakpoints"
     :wrapAround="true"

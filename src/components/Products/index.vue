@@ -4,7 +4,22 @@ import ProductItems from "./ProductItems/index.vue";
 import Divider from "../Divider/index.vue";
 </script>
 <template>
-  <section class="my-52 scroll-mt-32" id="products">
+  <section
+    v-motion
+    :initial="{
+      opacity: 0,
+    }"
+    :visible-once="{
+      opacity: 1,
+
+      transition: {
+        delay: 400,
+        duration: 500,
+      },
+    }"
+    class="my-52 scroll-mt-32"
+    id="products"
+  >
     <Container>
       <h3>Alguns Produtos</h3>
 

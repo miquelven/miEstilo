@@ -34,6 +34,16 @@ const data = [
     <Container>
       <div class="flex gap-16 max-2xl:gap-8 max-lg:flex-col">
         <div
+          v-motion
+          :initial="{ scale: 0, opacity: 0 }"
+          :visible-once="{
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 300,
+              duration: 1000,
+            },
+          }"
           v-for="(collection, index) in data"
           :key="index"
           class="relative p-7 bg-[#D9D9D9]/30 flex gap-12 max-sm:flex-col max-sm:gap-2"

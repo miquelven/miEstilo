@@ -65,6 +65,9 @@ addIcons(
   BiArrowUpSquareFill
 );
 
+// vueuse motion
+import { MotionPlugin } from "@vueuse/motion";
+
 const app = createApp(App);
 
 // vue icons
@@ -73,6 +76,7 @@ app.component("v-icon", OhVueIcon);
 app.component("Carousel", Carousel);
 
 app.use(vuetify);
+app.use(MotionPlugin);
 app.use(PrimeVue, {
   unstyled: true,
 });

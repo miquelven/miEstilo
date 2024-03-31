@@ -28,6 +28,16 @@ const data = [
     <Container>
       <div class="flex gap-4 items-center max-2xl:flex-col max-[1470]:gap-0">
         <div
+          v-motion
+          :initial="{ opacity: 0, y: 50 }"
+          :visible-once="{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: index * 400,
+              duration: 500,
+            },
+          }"
           v-for="(infos, index) in data"
           :key="index"
           class="h-[700px] w-1/3 bg-top bg-cover shadow-md shadow-gray-400 relative z-40 before:content-[''] before:w-full before:h-full before:transition-all before:duration-300 before:absolute before:inset-0 before:bg-black/20 before:hover:bg-black/60 max-2xl:w-screen max-md:h-[500px] max-sm:h-[300px]"
