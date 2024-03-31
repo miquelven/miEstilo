@@ -1,29 +1,25 @@
-# vue-project
+<h1 align='center'>Landing Page - MiEstilo</h1>
 
-This template should help get you started developing with Vue 3 in Vite.
+<br/>
+<br/>
 
-## Recommended IDE Setup
+![ezgif com-animated-gif-maker (3)](https://github.com/miquelven/Mi-Restaurant/assets/67767211/84cc6694-6eb7-4531-acd9-b68cd5cd7219)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Customize configuration
+>  Construida com Vue js, busquei trazer um estilo minimalista e objetivo
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+<br/>
+<br/>
 
-```sh
-npm install
-```
+## 🛠️ Construído com
+ 
+<div align='center'>
+  
 
-### Compile and Hot-Reload for Development
+<img src='https://img.shields.io/badge/-Vuejs-0D1117?style=for-the-badge&logo=vuedotjs&labelColor=0D1117' height='35' />
+<img src='https://img.shields.io/badge/-JavaScript-0D1117?style=for-the-badge&logo=javascript&labelColor=0D1117&textColor=0D1117' height='35' />
+<img src='https://img.shields.io/badge/-Tailwindcss-0D1117?style=for-the-badge&logo=tailwindcss&textColor=0D1117' height='35' />
 
-```sh
-npm run dev
-```
+</div>
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
