@@ -10,7 +10,6 @@ import About from "./components/About/index.vue";
 import SocialMedia from "./components/SocialMedia/index.vue";
 
 import { ref, onMounted, onBeforeMount } from "vue";
-import { Helmet } from "react-helmet";
 
 let showScroll = ref(false);
 
@@ -34,19 +33,6 @@ const scrollTop = () => {
 </script>
 
 <template>
-  <Helmet>
-    <title>MiEstilo</title>
-    <meta
-      name="description"
-      content="Landing Page moderna e objetiva com o intuito de mostrar os produtos e prospectar clientes"
-    />
-    <meta
-      name="keywords"
-      content="Moda, Roupas, Coleções, Acessórios, Desconto"
-    />
-    <meta name="author" content="MiEstilo" />
-  </Helmet>
-
   <Header />
   <main class="snap-y">
     <Banner />
