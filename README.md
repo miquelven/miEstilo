@@ -23,3 +23,38 @@
 
 </div>
 
+</br>
+</br>
+</br>
+
+## 📁 Instalação
+
+</br>
+
+1. Clone do repositório
+   ```bash
+   git clone https://github.com/miquelven/miEstilo.git
+   
+</br>
+
+
+2. Navegue até o diretório do projeto
+   ```bash
+   cd miEstilo
+
+</br>
+
+
+3. Instale as dependências
+   ```bash
+   npm install
+
+</br>
+
+4. Inicie o servidor de desenvolvimento
+   ```bash
+   npm run dev
+
+</br>
+
+5. Abra seu navegador: navegue até http://localhost:5173
