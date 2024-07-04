@@ -65,6 +65,8 @@ addIcons(
   BiArrowUpSquareFill
 );
 
+import VueLazyload from "vue-lazyload";
+
 // vueuse motion
 import { MotionPlugin } from "@vueuse/motion";
 
@@ -77,6 +79,10 @@ app.component("Carousel", Carousel);
 
 app.use(vuetify);
 app.use(MotionPlugin);
+app.use(VueLazyload, {
+  preLoad: 1.3,
+  attempt: 1,
+});
 app.use(PrimeVue, {
   unstyled: true,
 });
