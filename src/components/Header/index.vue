@@ -20,7 +20,7 @@ const showMenu = ref(false);
         duration: 600,
       },
     }"
-    class="w-full py-3 bg-[#D9D9D9] relative"
+    class="w-full py-2 shadow-lg shadow-[#D9D9D9] relative"
     :class="[showMenu ? 'overflow-visible' : 'overflow-hidden']"
   >
     <Container>
@@ -33,11 +33,7 @@ const showMenu = ref(false);
 
         <nav
           class="transition-all duration-300 max-md:absolute max-md:top-[80px] max-md:flex max-md:justify-center max-sm:top-16 max-[420px]:top-14"
-          :class="[
-            showMenu
-              ? '-left-10 bg-[#D9D9D9] w-screen'
-              : 'left-[-100vw] bg-transparent',
-          ]"
+          :class="[showMenu ? '-left-10  w-screen' : 'left-[-100vw] ']"
         >
           <ul
             class="transition-all duration-300 flex gap-8 font-medium max-md:py-3 max-md:gap-10 max-sm:text-xs max-[420px]:px-3 max-[420px]:text-[.625rem]"

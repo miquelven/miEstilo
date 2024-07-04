@@ -23,7 +23,7 @@ const data = [
   <li
     v-for="(infos, index) in data"
     :key="index"
-    class="transition-all duration-300 hover:text-[#495057] cursor-pointer hover:scale-95"
+    class="transition-all font-semibold duration-300 hover:text-[#495057] cursor-pointer hover:scale-95"
   >
     <a :href="infos.href"> {{ infos.label }} </a>
   </li>

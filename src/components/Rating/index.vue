@@ -40,7 +40,7 @@ const data = [
         }"
         class="text-white max-w-screen-md mx-auto"
       >
-        <div class="flex justify-center items-center h-[400px]">
+        <div id="ratingArea" class="flex justify-center items-center h-[400px]">
           <Carousel
             max-width="500px"
             :wrapAround="true"
@@ -85,3 +85,22 @@ const data = [
     </v-parallax>
   </section>
 </template>
+
+<style>
+#ratingArea .carousel__prev,
+#ratingArea .carousel__next {
+  border: 1px solid #d9d9d9;
+  background-color: transparent;
+  height: 44px;
+  width: 30px;
+  border-radius: 4px;
+  transition: all ease 300ms;
+}
+
+#ratingArea .carousel__prev:hover,
+#ratingArea .carousel__next:hover {
+  color: white;
+  background: #c1c1c13b;
+  border-color: transparent;
+}
+</style>

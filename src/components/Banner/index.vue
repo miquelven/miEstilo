@@ -65,11 +65,11 @@ const data = [
             <button
               name="whatsapp button"
               aria-label="whatsapp button"
-              class="transition-all duration-300 flex justify-center items-center py-2 w-32 border-2 border-transparent hover:border-[#D9D9D9] bg-black/40 hover:bg-transparent max-sm:w-24"
+              class="transition-all duration-300 flex justify-center items-center py-2 w-32 border-2 border-transparent hover:border-[#D9D9D9] bg-[#353535] hover:bg-[#535353] max-sm:w-24"
             >
               <v-icon
                 name="bi-whatsapp"
-                class="h-6 w-6 text-white max-sm:h-4 max-sm:w-4"
+                class="h-6 w-6 max-sm:h-4 max-sm:w-4"
               ></v-icon>
             </button>
           </div>

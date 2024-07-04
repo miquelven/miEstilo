@@ -4,7 +4,7 @@ import Icons from "../Icons/index.vue";
 
 <template>
   <footer
-    class="relative py-5 border-t-2 border-[#dddddd] w-full flex justify-center items-center max-sm:px-2"
+    class="relative py-5 shadow-top w-full flex justify-center items-center max-sm:px-2"
   >
     <span
       class="text-sm max-md:mb-10 max-sm:text-xs max-sm:text-center max-sm:leading-7"
@@ -16,3 +16,9 @@ import Icons from "../Icons/index.vue";
     </div>
   </footer>
 </template>
+
+<style scoped>
+.shadow-top {
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+</style>

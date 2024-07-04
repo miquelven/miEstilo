@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full bg-[#D9D9D9] flex flex-col justify-center items-center gap-20 mb-20 py-10 max-lg:gap-16 max-md:gap-12 max-sm:px-10 max-sm:overflow-hidden"
+    class="w-full bg-[#D9D9D9] flex flex-col justify-center items-center gap-10 mb-20 py-10 max-lg:gap-16 max-md:gap-12 max-sm:px-10 max-sm:overflow-hidden"
   >
     <h4
       v-motion
@@ -17,7 +17,7 @@
       Temos uma grande variedade de produtos
     </h4>
 
-    <div class="flex gap-10">
+    <div class="flex gap-32">
       <v-icon
         v-motion
         :initial="{ opacity: 0, scale: 0 }"
@@ -31,7 +31,7 @@
         v-for="(icon, index) in icons"
         :key="index"
         :name="icon"
-        class="transition-all duration-300 w-20 h-20 text-[#495057] hover:text-black max-lg:w-14 max-lg:h-14 max-md:w-10 max-md:h-10"
+        class="transition-all duration-300 w-14 h-14 text-[#495057] hover:text-black max-lg:w-14 max-lg:h-14 max-md:w-10 max-md:h-10"
       />
     </div>
   </div>

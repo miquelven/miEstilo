@@ -34,7 +34,7 @@ import Divider from "../Divider/index.vue";
               duration: 400,
             },
           }"
-          class="text-3xl font-medium max-lg:text-2xl max-sm:text-lg"
+          class="text-3xl font-semibold max-lg:text-2xl max-sm:text-lg"
         >
           Temos o compromisso de proporcionar o que há de melhor na moda.
         </h4>
@@ -49,7 +49,7 @@ import Divider from "../Divider/index.vue";
               duration: 400,
             },
           }"
-          class="leading-[50px] font-light text-xl max-w-screen-lg mx-auto max-lg:text-lg max-sm:text-sm max-sm:leading-7"
+          class="leading-[50px] font-medium text-xl max-w-screen-lg mx-auto max-lg:text-lg max-sm:text-sm max-sm:leading-7"
         >
           Na MiEstilo, acreditamos que a moda é uma forma de expressão pessoal e
           de confiança. Nossa missão é proporcionar a você uma experiência de

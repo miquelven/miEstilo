@@ -55,7 +55,7 @@ const data = [
               duration: 400,
             },
           }"
-          class="flex flex-col gap-7 text-center font-medium max-sm:text-sm max-sm:gap-5"
+          class="flex text-lg flex-col gap-3 text-center font-semibold max-sm:text-sm max-sm:gap-5"
         >
           <p>
             Rua das Flores, Jardim Primavera, 12345-678, São Miguel das Almas
@@ -64,7 +64,7 @@ const data = [
         </div>
 
         <div
-          class="flex w-full mt-16 relative justify-center min-w-96 max-lg:flex-wrap"
+          class="flex w-full mt-8 relative justify-center min-w-96 max-lg:flex-wrap"
         >
           <div
             v-motion
@@ -103,13 +103,13 @@ const data = [
             class="absolute -bottom-10 flex justify-center items-center w-full max-lg:bottom-0"
           >
             <div
-              class="text-center w-[calc(33%-20px)] py-3 shadow-md shadow-gray-400 bg-white flex flex-col gap-4 max-lg:w-full max-lg:translate-x-0 max-lg:translate-y-[100%] max-sm:border-b-2 max-sm:border-gray-200 max-sm:shadow-none"
+              class="text-center w-[calc(33%-20px)] py-3 shadow-md shadow-gray-400 bg-white flex flex-col gap-2 max-lg:w-full max-lg:translate-x-0 max-lg:translate-y-[100%] max-sm:border-b-2 max-sm:border-gray-200 max-sm:shadow-none"
             >
-              <h6 class="text-xl font-semibold max-lg:text-lg max-sm:text-base">
+              <h6 class="text-xl max-lg:text-lg max-sm:text-base">
                 Nos siga no instagram
               </h6>
               <span
-                class="text-[#B9B9B9] font-medium max-lg:text-sm max-sm:text-xs"
+                class="text-[#353535] font-semibold max-lg:text-sm max-sm:text-xs"
                 >@miestilo</span
               >
             </div>

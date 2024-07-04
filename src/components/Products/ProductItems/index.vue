@@ -18,20 +18,21 @@
   >
     <Slide v-for="(product, index) in data.products" :key="index">
       <v-card
-        class="relative pt-10 w-[320px] h-[384px] max-lg:w-[280px] max-lg:h-[344px] max-md:w-[220px] max-md:h-[284px]"
+        class="relative m-2 pt-10 w-[320px] h-[384px] max-lg:w-[280px] max-lg:h-[344px] max-md:w-[220px] max-md:h-[284px]"
+        elevation="4"
       >
         <!-- whatsapp button -->
         <v-btn
           v-bind:name="'whatsapp button product'"
           v-bind:aria-label="'whatsapp button product'"
           variant="outlined"
-          color="#50af29"
+          color="#3c6e71"
           style="position: absolute; top: 0; left: 0"
           class="max-md:scale-90"
         >
           <v-icon
             name="bi-whatsapp"
-            class="h-6 w-6 text-[#50af29] max-md:h-5 max-md:w-5"
+            class="h-6 w-6 text-[#3c6e71] max-md:h-5 max-md:w-5"
           ></v-icon>
         </v-btn>
 
@@ -39,7 +40,7 @@
 
         <v-card
           v-if="product.discount"
-          color="#D77A61"
+          color="#284b63"
           class="w-14 h-7 text-white flex justify-center items-center max-md:w-11 max-md:h-7"
           style="position: absolute; top: 0; right: 0"
         >
@@ -176,12 +177,28 @@ export default defineComponent({
   box-shadow: none !important;
 }
 
+.carousel__pagination-button {
+  padding: 8px !important;
+}
+
 .carousel__pagination-button::after {
   width: 16px;
   height: 16px;
   border-radius: 50%;
 }
-.carousel__pagination-button {
-  padding: 8px !important;
+
+.carousel__prev,
+.carousel__next {
+  background-color: #d9d9d9;
+  height: 52px;
+  width: 40px;
+  border-radius: 4px;
+  transition: all ease 300ms;
+}
+
+.carousel__prev:hover,
+.carousel__next:hover {
+  background-color: #aaaaaa;
+  color: #fff;
 }
 </style>
