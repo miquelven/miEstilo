@@ -17,7 +17,8 @@ html {
 body {
   font-family: "Poppins", arial;
   overflow: hidden;
-  background: #f8f9fa;
+  background: #f2f2f2;
+  color: #333333;
 }
 
 section {
