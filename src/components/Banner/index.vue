@@ -63,6 +63,7 @@ const data = [
               {{ infos.subtitle }}
             </p>
             <button
+              name="whatsapp button"
               class="transition-all duration-300 flex justify-center items-center py-2 w-32 border-2 border-transparent hover:border-[#D9D9D9] bg-black/40 hover:bg-transparent max-sm:w-24"
             >
               <v-icon

@@ -22,6 +22,7 @@
       >
         <!-- whatsapp button -->
         <v-btn
+          v-bind:name="'whatsapp button product'"
           variant="outlined"
           color="#50af29"
           style="position: absolute; top: 0; left: 0"
@@ -33,7 +34,7 @@
           ></v-icon>
         </v-btn>
 
-        <!-- discount button -->
+        <!-- discount -->
 
         <v-card
           v-if="product.discount"
@@ -105,13 +106,10 @@ export default defineComponent({
     Container,
   },
   data: () => ({
-    // carousel settings
     settings: {
       itemsToShow: 1,
       snapAlign: "center",
     },
-    // breakpoints are mobile first
-    // any settings not specified will fallback to the carousel settings
     breakpoints: {
       550: {
         itemsToShow: 2,
@@ -175,5 +173,14 @@ export default defineComponent({
 <style>
 .v-card--variant-elevated {
   box-shadow: none !important;
+}
+
+.carousel__pagination-button::after {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.carousel__pagination-button {
+  padding: 8px !important;
 }
 </style>
