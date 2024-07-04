@@ -43,6 +43,7 @@ const showMenu = ref(false);
         </nav>
 
         <button
+          aria-label="menu button"
           class="md:hidden"
           @click="
             () => {
