@@ -23,6 +23,7 @@
         <!-- whatsapp button -->
         <v-btn
           v-bind:name="'whatsapp button product'"
+          v-bind:aria-label="'whatsapp button product'"
           variant="outlined"
           color="#50af29"
           style="position: absolute; top: 0; left: 0"
