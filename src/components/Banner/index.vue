@@ -1,8 +1,10 @@
 <script setup>
 import Container from "../Container/index.vue";
-import womanBanner from "../../../public/images/banner/womanBanner.webp";
-import shoeBanner from "../../../public/images/banner/shoeBanner.webp";
-import manBanner from "../../../public/images/banner/manBanner.webp";
+import { ref } from "vue";
+
+const womanBanner = ref("../../../public/images/banner/womanBanner.webp");
+const shoeBanner = ref("../../../public/images/banner/shoeBanner.webp");
+const manBanner = ref("../../../public/images/banner/manBanner.webp");
 
 const data = [
   {
@@ -42,7 +44,7 @@ const data = [
           :key="index"
           class="h-[700px] w-1/3 bg-top bg-cover shadow-md shadow-gray-400 relative z-40 before:content-[''] before:w-full before:h-full before:transition-all before:duration-300 before:absolute before:inset-0 before:bg-black/20 before:hover:bg-black/60 max-2xl:w-screen max-md:h-[500px] max-sm:h-[300px]"
           :style="{
-            backgroundImage: `url('${infos.img}')`,
+            backgroundImage: `url('${infos.img.value}')`,
           }"
           :class="`${index == 0 || index == 2 ? 'mt-20' : ''}
           ${index == 0 ? 'max-md:mt-16  max-sm:mt-12' : ''}

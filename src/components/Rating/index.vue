@@ -1,23 +1,26 @@
 <script setup>
 import { Carousel, Navigation, Slide } from "vue3-carousel";
-import backgroundRating from "../../../public/images/rating/ratingImg.webp";
-import avatarImg from "../../../public/images/rating/ratingAvatarImg.webp";
+
+import { ref } from "vue";
+
+const backgroundRating = ref("../../../public/images/rating/ratingImg.webp");
+const avatarImg = ref("../../../public/images/rating/ratingAvatarImg.webp");
 
 const data = [
   {
-    img: avatarImg,
+    img: avatarImg.value,
     alt: "Imagem do avaliador",
     name: "Amanda Silva",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ex sit amet justo facilisis vestibulum. Fusce metus turpis, fringilla in faucibus et, ultricies ut justo.",
   },
   {
-    img: avatarImg,
+    img: avatarImg.value,
     alt: "Imagem do avaliador",
     name: "Amanda Silva",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ex sit amet justo facilisis vestibulum. Fusce metus turpis, fringilla in faucibus et, ultricies ut justo.",
   },
   {
-    img: avatarImg,
+    img: avatarImg.value,
     alt: "Imagem do avaliador",
     name: "Amanda Silva",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ex sit amet justo facilisis vestibulum. Fusce metus turpis, fringilla in faucibus et, ultricies ut justo.",

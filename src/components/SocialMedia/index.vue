@@ -1,11 +1,18 @@
 <script setup>
 import Container from "../Container/index.vue";
-import camisa from "../../../public/images/socialMedia/camisa.webp";
-import calçaCinza from "../../../public/images/socialMedia/calçaCinza.webp";
-import tenisVerde from "../../../public/images/socialMedia/tenisVerde.webp";
-import regataBranca from "../../../public/images/socialMedia/regataBranca.webp";
-import moletomVermelho from "../../../public/images/socialMedia/moletomVermelho.webp";
-import bermuda from "../../../public/images/socialMedia/bermuda.webp";
+
+import { ref } from "vue";
+
+const camisa = ref("../../../public/images/socialMedia/camisa.webp");
+const calçaCinza = ref("../../../public/images/socialMedia/calçaCinza.webp");
+const tenisVerde = ref("../../../public/images/socialMedia/tenisVerde.webp");
+const regataBranca = ref(
+  "../../../public/images/socialMedia/regataBranca.webp"
+);
+const moletomVermelho = ref(
+  "../../../public/images/socialMedia/moletomVermelho.webp"
+);
+const bermuda = ref("../../../public/images/socialMedia/bermuda.webp");
 
 const data = [
   {
@@ -83,7 +90,7 @@ const data = [
             :style="{ backgroundColor: infos.color }"
           >
             <img
-              :src="infos.img"
+              :src="infos.img.value"
               :alt="infos.alt"
               class="w-40 max-lg:w-24 max-sm:w-20"
             />
