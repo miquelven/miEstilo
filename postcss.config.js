@@ -1,4 +1,6 @@
 import purgecss from "@fullhuman/postcss-purgecss";
+import tailwindcss from "tailwindcss";
+import autoprefixer from "autoprefixer";
 
 const purgecssPlugin = purgecss({
   content: ["./public/**/*.html", "./src/**/*.vue"],
@@ -7,8 +9,8 @@ const purgecssPlugin = purgecss({
 
 export default {
   plugins: [
-    require("tailwindcss"),
-    require("autoprefixer"),
+    tailwindcss,
+    autoprefixer,
     ...(process.env.NODE_ENV === "production" ? [purgecssPlugin] : []),
   ],
 };
