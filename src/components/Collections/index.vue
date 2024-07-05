@@ -3,16 +3,13 @@ import Container from "../Container/index.vue";
 
 import { ref } from "vue";
 
-const milimalistCollection = ref(
-  "/public/images/collections/minimalistCollection.webp"
-);
-const fashionCollection = ref(
-  "/public/images/collections/fashionCollection.webp"
-);
+import milimalistCollection from "/public/images/collections/minimalistCollection.webp";
+
+import fashionCollection from "/public/images/collections/fashionCollection.webp";
 
 const data = [
   {
-    img: milimalistCollection.value,
+    img: milimalistCollection,
     alt: "Imagem da coleção minimalista",
     title: "Coleção Minimalista",
     list: [
@@ -23,7 +20,7 @@ const data = [
     discount: 70,
   },
   {
-    img: fashionCollection.value,
+    img: fashionCollection,
     alt: "Imagem da coleção fashion",
     title: "Coleção Fashion",
     list: [

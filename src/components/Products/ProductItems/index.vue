@@ -85,16 +85,16 @@
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 import { Carousel, Navigation, Slide, Pagination } from "vue3-carousel";
 import Container from "../../Container/index.vue";
 
-const camisa = ref("/public/images/products/camisa.webp");
-const calçaPreta = ref("/public/images/products/calça-preta.webp");
-const moletomPreto = ref("/public/images/products/moletom-preto.webp");
-const calçaCamuflada = ref("/public/images/products/calça-camuflada.webp");
-const short = ref("/public/images/products/short.webp");
-const moletom = ref("/public/images/products/moletom.webp");
+import camisa from "/public/images/products/camisa.webp";
+import calçaPreta from "/public/images/products/calça-preta.webp";
+import moletomPreto from "/public/images/products/moletom-preto.webp";
+import calçaCamuflada from "/public/images/products/calça-camuflada.webp";
+import short from "/public/images/products/short.webp";
+import moletom from "/public/images/products/moletom.webp";
 
 import "vue3-carousel/dist/carousel.css";
 
@@ -125,42 +125,42 @@ export default defineComponent({
     data: {
       products: [
         {
-          img: camisa.value,
+          img: camisa,
           name: "Camisa Branca",
           totalPrice: 80,
           price: 40,
           discount: 50,
         },
         {
-          img: calçaPreta.value,
+          img: calçaPreta,
           name: "Calça Esportiva",
           totalPrice: 50,
           price: 50,
           discount: 0,
         },
         {
-          img: moletomPreto.value,
+          img: moletomPreto,
           name: "Moletom ",
           totalPrice: 140,
           price: 100,
           discount: 30,
         },
         {
-          img: calçaCamuflada.value,
+          img: calçaCamuflada,
           name: "Calça Camuflada",
           totalPrice: 120,
           price: 120,
           discount: 0,
         },
         {
-          img: short.value,
+          img: short,
           name: "Short",
           totalPrice: 30,
           price: 20,
           discount: 35,
         },
         {
-          img: moletom.value,
+          img: moletom,
           name: "Moletom",
           totalPrice: 100,
           price: 80,
