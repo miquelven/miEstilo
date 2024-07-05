@@ -7,7 +7,7 @@ const purgecssPlugin = purgecss({
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 });
 
-export default {
+module.exports = {
   plugins: [
     tailwindcss,
     autoprefixer,
