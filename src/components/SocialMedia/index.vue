@@ -3,16 +3,12 @@ import Container from "../Container/index.vue";
 
 import { ref } from "vue";
 
-const camisa = ref("../../../public/images/socialMedia/camisa.webp");
-const calçaCinza = ref("../../../public/images/socialMedia/calçaCinza.webp");
-const tenisVerde = ref("../../../public/images/socialMedia/tenisVerde.webp");
-const regataBranca = ref(
-  "../../../public/images/socialMedia/regataBranca.webp"
-);
-const moletomVermelho = ref(
-  "../../../public/images/socialMedia/moletomVermelho.webp"
-);
-const bermuda = ref("../../../public/images/socialMedia/bermuda.webp");
+const camisa = ref("/public/images/socialMedia/camisa.webp");
+const calçaCinza = ref("/public/images/socialMedia/calçaCinza.webp");
+const tenisVerde = ref("/public/images/socialMedia/tenisVerde.webp");
+const regataBranca = ref("/public/images/socialMedia/regataBranca.webp");
+const moletomVermelho = ref("/public/images/socialMedia/moletomVermelho.webp");
+const bermuda = ref("/public/images/socialMedia/bermuda.webp");
 
 const data = [
   {

@@ -3,8 +3,8 @@ import { Carousel, Navigation, Slide } from "vue3-carousel";
 
 import { ref } from "vue";
 
-const backgroundRating = ref("../../../public/images/rating/ratingImg.webp");
-const avatarImg = ref("../../../public/images/rating/ratingAvatarImg.webp");
+const backgroundRating = ref("/public/images/rating/ratingImg.webp");
+const avatarImg = ref("/public/images/rating/ratingAvatarImg.webp");
 
 const data = [
   {

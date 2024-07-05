@@ -4,10 +4,10 @@ import Container from "../Container/index.vue";
 import { ref } from "vue";
 
 const milimalistCollection = ref(
-  "../../../public/images/collections/minimalistCollection.webp"
+  "/public/images/collections/minimalistCollection.webp"
 );
 const fashionCollection = ref(
-  "../../../public/images/collections/fashionCollection.webp"
+  "/public/images/collections/fashionCollection.webp"
 );
 
 const data = [

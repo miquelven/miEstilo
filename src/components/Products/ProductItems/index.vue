@@ -89,16 +89,12 @@ import { defineComponent, ref } from "vue";
 import { Carousel, Navigation, Slide, Pagination } from "vue3-carousel";
 import Container from "../../Container/index.vue";
 
-const camisa = ref("../../../../public/images/products/camisa.webp");
-const calçaPreta = ref("../../../../public/images/products/calça-preta.webp");
-const moletomPreto = ref(
-  "../../../../public/images/products/moletom-preto.webp"
-);
-const calçaCamuflada = ref(
-  "../../../../public/images/products/calça-camuflada.webp"
-);
-const short = ref("../../../../public/images/products/short.webp");
-const moletom = ref("../../../../public/images/products/moletom.webp");
+const camisa = ref("/public/images/products/camisa.webp");
+const calçaPreta = ref("/public/images/products/calça-preta.webp");
+const moletomPreto = ref("/public/images/products/moletom-preto.webp");
+const calçaCamuflada = ref("/public/images/products/calça-camuflada.webp");
+const short = ref("/public/images/products/short.webp");
+const moletom = ref("/public/images/products/moletom.webp");
 
 import "vue3-carousel/dist/carousel.css";
 

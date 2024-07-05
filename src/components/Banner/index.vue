@@ -2,9 +2,9 @@
 import Container from "../Container/index.vue";
 import { ref } from "vue";
 
-const womanBanner = ref("../../../public/images/banner/womanBanner.webp");
-const shoeBanner = ref("../../../public/images/banner/shoeBanner.webp");
-const manBanner = ref("../../../public/images/banner/manBanner.webp");
+const womanBanner = ref("/public/images/banner/womanBanner.webp");
+const shoeBanner = ref("/public/images/banner/shoeBanner.webp");
+const manBanner = ref("/public/images/banner/manBanner.webp");
 
 const data = [
   {
