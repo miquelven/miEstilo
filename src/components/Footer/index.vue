@@ -3,22 +3,21 @@ import Icons from "../Icons/index.vue";
 </script>
 
 <template>
-  <footer
-    class="relative py-5 shadow-top w-full flex justify-center items-center max-sm:px-2"
-  >
-    <span
-      class="text-sm max-md:mb-10 max-sm:text-xs max-sm:text-center max-sm:leading-7"
-      >© Copyright - Todos os direitos reservados - Miquelven Silva</span
-    >
-
-    <div class="absolute right-10 bottom-4 flex gap-6">
-      <Icons :responsive="true" />
+  <footer class="py-8 bg-white border-t border-gray-200 w-full">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-6">
+        <!-- Copyright -->
+        <div class="text-center lg:text-left">
+          <p class="text-gray-600 text-sm">
+            © 2024 <span class="font-semibold text-gray-800">miEstilo</span> - Todos os direitos reservados
+          </p>
+        </div>
+        
+        <!-- Social Icons -->
+        <div class="flex items-center gap-4">
+          <Icons :responsive="true" />
+        </div>
+      </div>
     </div>
   </footer>
 </template>
-
-<style scoped>
-.shadow-top {
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-}
-</style>

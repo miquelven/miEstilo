@@ -1,40 +1,56 @@
 <template>
-  <div
-    class="w-full bg-[#D9D9D9] flex flex-col justify-center items-center gap-10 mb-20 py-10 max-lg:gap-16 max-md:gap-12 max-sm:px-10 max-sm:overflow-hidden"
-  >
-    <h4
-      v-motion
-      :initial="{ opacity: 0, y: 50 }"
-      :visible-once="{
-        opacity: 1,
-        y: 0,
-        transition: {
-          delay: 800,
-        },
-      }"
-      class="text-3xl font-medium max-lg:text-2xl max-sm:text-sm max-sm:text-center"
-    >
-      Temos uma grande variedade de produtos
-    </h4>
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h3
+          v-motion
+          :initial="{ opacity: 0, y: 30 }"
+          :visible-once="{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 200,
+              duration: 600,
+            },
+          }"
+          class="text-3xl font-bold text-gray-900 mb-4 max-lg:text-2xl max-sm:text-xl"
+        >
+          Categorias de Produtos
+        </h3>
+        <p class="text-lg text-gray-600 max-lg:text-base max-sm:text-sm">
+          Explore nossa ampla variedade de produtos
+        </p>
+      </div>
 
-    <div class="flex gap-32">
-      <v-icon
-        v-motion
-        :initial="{ opacity: 0, scale: 0 }"
-        :visible-once="{
-          opacity: 1,
-          scale: 1,
-          transition: {
-            delay: index * 200,
-          },
-        }"
-        v-for="(icon, index) in icons"
-        :key="index"
-        :name="icon"
-        class="transition-all duration-300 w-14 h-14 text-[#495057] hover:text-black max-lg:w-14 max-lg:h-14 max-md:w-10 max-md:h-10"
-      />
+      <div class="grid grid-cols-4 md:grid-cols-8 gap-8 max-sm:gap-4">
+        <div
+          v-motion
+          :initial="{ opacity: 0, scale: 0.8 }"
+          :visible-once="{
+            opacity: 1,
+            scale: 1,
+            transition: {
+              delay: index * 100 + 400,
+              duration: 400,
+            },
+          }"
+          v-for="(icon, index) in icons"
+          :key="index"
+          class="flex flex-col items-center gap-3 p-4 rounded-xl hover:bg-white hover:shadow-md transition-all duration-300 cursor-pointer group"
+        >
+          <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+            <v-icon
+              :name="icon"
+              class="w-6 h-6 text-gray-600 group-hover:text-white transition-colors duration-300"
+            />
+          </div>
+          <span class="text-xs text-gray-600 font-medium text-center group-hover:text-gray-900 transition-colors duration-300">
+            {{ getCategoryName(index) }}
+          </span>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -48,4 +64,19 @@ const icons = [
   "gi-billed-cap",
   "gi-skirt",
 ];
+
+const categoryNames = [
+  "Camisas",
+  "Calças",
+  "Calçados",
+  "Vestidos",
+  "Roupas Longas",
+  "Casacos",
+  "Bonés",
+  "Saias",
+];
+
+const getCategoryName = (index) => {
+  return categoryNames[index] || "Categoria";
+};
 </script>

@@ -4,61 +4,87 @@ import Divider from "../Divider/index.vue";
 </script>
 
 <template>
-  <section class="my-40 scroll-mt-40" id="about">
+  <section class="py-20 bg-white scroll-mt-32" id="about">
     <Container>
-      <h3
-        v-motion
-        :initial="{ opacity: 0, x: -200 }"
-        :visible-once="{
-          opacity: 1,
-          x: 0,
-          transition: {
-            delay: 300,
-            duration: 400,
-          },
-        }"
-      >
-        Sobre Nós
-      </h3>
-
-      <Divider />
-
-      <div class="my-28 flex flex-col gap-14 text-center max-sm:my-20">
-        <h4
+      <div class="max-w-4xl mx-auto text-center">
+        <h2
           v-motion
-          :initial="{ opacity: 0 }"
+          :initial="{ opacity: 0, y: 30 }"
           :visible-once="{
             opacity: 1,
+            y: 0,
             transition: {
-              delay: 1000,
-              duration: 400,
+              delay: 200,
+              duration: 600,
             },
           }"
-          class="text-3xl font-semibold max-lg:text-2xl max-sm:text-lg"
+          class="text-4xl font-bold text-gray-900 mb-6 max-lg:text-3xl max-sm:text-2xl"
         >
-          Temos o compromisso de proporcionar o que há de melhor na moda.
-        </h4>
+          Sobre a MiEstilo
+        </h2>
 
         <p
           v-motion
-          :initial="{ opacity: 0 }"
+          :initial="{ opacity: 0, y: 30 }"
           :visible-once="{
             opacity: 1,
+            y: 0,
             transition: {
-              delay: 1400,
-              duration: 400,
+              delay: 400,
+              duration: 600,
             },
           }"
-          class="leading-[50px] font-medium text-xl max-w-screen-lg mx-auto max-lg:text-lg max-sm:text-sm max-sm:leading-7"
+          class="text-xl text-gray-600 mb-8 max-lg:text-lg max-sm:text-base"
+        >
+          Temos o compromisso de proporcionar o que há de melhor na moda.
+        </p>
+
+        <p
+          v-motion
+          :initial="{ opacity: 0, y: 30 }"
+          :visible-once="{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 600,
+              duration: 600,
+            },
+          }"
+          class="text-lg text-gray-700 leading-relaxed max-lg:text-base max-sm:text-sm"
         >
           Na MiEstilo, acreditamos que a moda é uma forma de expressão pessoal e
           de confiança. Nossa missão é proporcionar a você uma experiência de
           compra fácil e emocionante, oferecendo uma seleção cuidadosamente
           curada das últimas tendências e clássicos atemporais.
         </p>
-      </div>
 
-      <Divider />
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: 30 }"
+          :visible-once="{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 800,
+              duration: 600,
+            },
+          }"
+          class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
+          <div class="text-center">
+            <div class="text-3xl font-bold text-gray-900 mb-2">500+</div>
+            <div class="text-gray-600">Produtos</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-gray-900 mb-2">1000+</div>
+            <div class="text-gray-600">Clientes Satisfeitos</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-gray-900 mb-2">5+</div>
+            <div class="text-gray-600">Anos de Experiência</div>
+          </div>
+        </div>
+      </div>
     </Container>
   </section>
 </template>

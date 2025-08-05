@@ -17,64 +17,56 @@
     class="flex flex-col gap-5 w-full"
   >
     <Slide v-for="(product, index) in data.products" :key="index">
-      <v-card
-        class="relative m-2 pt-10 w-[320px] h-[384px] max-lg:w-[280px] max-lg:h-[344px] max-md:w-[220px] max-md:h-[284px]"
-        elevation="4"
-      >
-        <!-- whatsapp button -->
-        <v-btn
-          v-bind:name="'whatsapp button product'"
-          v-bind:aria-label="'whatsapp button product'"
-          variant="outlined"
-          color="#3c6e71"
-          style="position: absolute; top: 0; left: 0"
-          class="max-md:scale-90"
-        >
-          <v-icon
-            name="bi-whatsapp"
-            class="h-6 w-6 text-[#3c6e71] max-md:h-5 max-md:w-5"
-          ></v-icon>
-        </v-btn>
-
-        <!-- discount -->
-
-        <v-card
-          v-if="product.discount"
-          color="#284b63"
-          class="w-14 h-7 text-white flex justify-center items-center max-md:w-11 max-md:h-7"
-          style="position: absolute; top: 0; right: 0"
-        >
-          <span
-            class="text-center w-full h-full inline-block font-semibold max-md:text-xs"
-            >{{ product.discount }}%</span
+      <div class="group relative mx-3 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+        <!-- Product Image -->
+        <div class="relative aspect-[4/5] overflow-hidden">
+          <img
+            :src="product.img"
+            alt="imagem do produto"
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          />
+          
+          <!-- Discount Badge -->
+          <div
+            v-if="product.discount"
+            class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-semibold"
           >
-        </v-card>
-
-        <img
-          :src="product.img"
-          alt="imagem do produto"
-          class="h-[242px] flex-1 object-cover object-center mx-auto max-lg:h-[200px] max-md:h-[150px] max-sm:h-[120px] max-sm:mt-5"
-        />
-        <div class="flex flex-col gap-2 absolute bottom-4 left-0 w-full">
-          <h4
-            class="text-center text-xl font-semibold max-lg:text-lg max-md:text-base"
+            -{{ product.discount }}%
+          </div>
+          
+          <!-- WhatsApp Button -->
+          <button
+            class="absolute top-3 left-3 w-10 h-10 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center transition-colors duration-300 opacity-0 group-hover:opacity-100"
+            aria-label="Contato via WhatsApp"
           >
+            <v-icon name="bi-whatsapp" class="w-5 h-5"></v-icon>
+          </button>
+        </div>
+        
+        <!-- Product Info -->
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800 mb-2 line-clamp-2">
             {{ product.name }}
           </h4>
-          <div
-            class="flex gap-3 justify-center items-center font-medium max-lg:text-sm max-md:text-xs"
-          >
-            <span> R${{ product.price }},00 </span>
-
+          
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-bold text-gray-900">
+              R$ {{ product.price }},00
+            </span>
             <span
               v-if="product.price !== product.totalPrice"
-              class="text-[#aaa]"
+              class="text-sm text-gray-500 line-through"
             >
-              R${{ product.totalPrice }},00
+              R$ {{ product.totalPrice }},00
             </span>
           </div>
+          
+          <!-- Add to Cart Button -->
+          <button class="w-full mt-3 bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-300 text-sm font-medium">
+            Adicionar ao Carrinho
+          </button>
         </div>
-      </v-card>
+      </div>
     </Slide>
 
     <template #addons>
@@ -89,12 +81,12 @@ import { defineComponent } from "vue";
 import { Carousel, Navigation, Slide, Pagination } from "vue3-carousel";
 import Container from "../../Container/index.vue";
 
-import camisa from "/public/images/products/camisa.webp";
-import calçaPreta from "/public/images/products/calça-preta.webp";
-import moletomPreto from "/public/images/products/moletom-preto.webp";
-import calçaCamuflada from "/public/images/products/calça-camuflada.webp";
-import short from "/public/images/products/short.webp";
-import moletom from "/public/images/products/moletom.webp";
+import camisa from "/images/products/camisa.webp";
+import calçaPreta from "/images/products/calça-preta.webp";
+import moletomPreto from "/images/products/moletom-preto.webp";
+import calçaCamuflada from "/images/products/calça-camuflada.webp";
+import short from "/images/products/short.webp";
+import moletom from "/images/products/moletom.webp";
 
 import "vue3-carousel/dist/carousel.css";
 
@@ -173,32 +165,54 @@ export default defineComponent({
 </script>
 
 <style>
-.v-card--variant-elevated {
-  box-shadow: none !important;
-}
-
 .carousel__pagination-button {
-  padding: 8px !important;
+  padding: 6px !important;
+  margin: 0 4px !important;
 }
 
 .carousel__pagination-button::after {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
+  background-color: #d1d5db;
+  transition: all 0.3s ease;
+}
+
+.carousel__pagination-button--active::after {
+  background-color: #374151;
+  transform: scale(1.2);
 }
 
 .carousel__prev,
 .carousel__next {
-  background-color: #d9d9d9;
-  height: 52px;
-  width: 40px;
-  border-radius: 4px;
-  transition: all ease 300ms;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  height: 48px;
+  width: 48px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .carousel__prev:hover,
 .carousel__next:hover {
-  background-color: #aaaaaa;
+  background-color: #374151;
+  border-color: #374151;
   color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel__icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 </style>
